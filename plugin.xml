@@ -14,12 +14,12 @@
         <engine name="cordova" version=">=3.0"/>
     </engines>
 
-    <preference name="Localizations" value="zh_CN"/>
+    <preference name="LOCALIZATION" value="zh_CN"/>
 
     <platform name="ios">
         <config-file target="*-Info.plist" parent="CFBundleLocalizations">
           <array>
-           <string>$Localizations</string>
+           <string>$LOCALIZATION</string>
           </array>
         </config-file>
     </platform>
