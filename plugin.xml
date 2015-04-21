@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.qdsang.localization"
+        version="0.0.1">
+
+    <name>cordova-plugin-localization</name>
+    <description></description>
+    <author>qdsang</author>
+    <keywords>localization,ios</keywords>
+    <license>Apache 2.0 License</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0"/>
+    </engines>
+
+    <preference name="Localizations" value="zh_CN"/>
+
+    <platform name="ios">
+        <config-file target="*-Info.plist" parent="CFBundleLocalizations">
+          <array>
+           <string>$Localizations</string>
+          </array>
+        </config-file>
+    </platform>
+    
+</plugin>
